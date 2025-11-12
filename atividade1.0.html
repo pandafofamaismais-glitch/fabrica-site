@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="atividade1.0.css">
+</head>
+
+<body>
+
+    <form class="formulario" action="">
+        <fieldset>
+            <h1>
+                <legend>Fale conosco</legend>
+            </h1>
+            <div>
+                <h2> <label for="nome">Nome</label></h2>
+                <input id="nome" name="nome" type="text">
+            </div>
+            <div>
+                <h2><label for="email">E-mail</label></h2>
+                <input id="email" name="email" type="text">
+            </div>
+
+            <div>
+                <h2><label for="assunto">Assunto</label></h2>
+                <select name="assunto" id="assunto">
+                    <option value="feedback">Retorno sobre o projeto</option>
+                    <option value="sugest">Sugestão para projeto</option>
+                    <option value="new-project">Novo projeto</option>
+                    <option value="mensagem">Uma mensagem</option>
+                </select>
+            </div>
+
+            <div>
+                <h2><label for="mensagem">Mensagem</label></h2>
+                <textarea name="mensagem" id="mensagem" cols="82" rows="20"></textarea>
+        </fieldset>
+       <button   class="botão" type="submit"><h1>Enviar</h1></button>
+        </div>
+        <script>
+
+            function validaForm() {
+                const email = document.getElementById('email');
+                let emailText = email.value.trim();
+                let valido = false;
+
+                if (emailText.includes("@")) {
+                    valido = true;
+                } else {
+                    valido = false
+                }
+                let partesEmail = emailText.split("@");
+                if (partesEmail[0].lenght >= 7 && partesEmail[0].lenght <= 127) {
+                    console.log("O tamanho está entre 7 e 127");
+                    valido = true;
+
+                } else {
+                    valido = false;
+                }
+
+
+
+                const nome = document.getElementById("nome");
+                let nomeText = nome.value.trim();
+                if (nome.lenght >= 3) {
+                    console.log("Nome atende ao tamanho mínimo")
+                    valido = true
+                } else {
+                    valido = false;
+                }
+                const textArea = document.getElementById("mensagem");
+                let textTexto = textArea.value.trim();
+                if (textTexto === "") {
+                    console.log("Texto não pode ser vazio!")
+                }
+
+            }
+
+            document.addEventListener("submit", function (e) {
+                e.preventDefaut();
+                validaForm();
+            })
+
+        </script>
+    </form>
+
+
+
+
+</body>
+
+</html>
