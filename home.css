@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: #f56ab4;
+}
+
+.formulario {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.botão{
+    border-radius:none;
+    border-color: hsl(339, 90%, 69%);
+    box-shadow:50px;
+    background-color: hwb(120 42% 57%);
+    color: #9b0e49;
+    width:90px;
+    height:75px;
+}
