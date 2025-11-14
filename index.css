@@ -1,51 +1,19 @@
-body{
-background-color:black;    
-color:cyan;
+body {
+    background-color: rgb(0, 0, 0);
+    color: #f56ab4;
 }
 
-.meio {
-    padding: 300px;
-    height: 1000px;
-    color: #714ee3;
+.formulario {
+    width: 600px;
+    margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
-    color: aqua;
-}
-
-.cor1{
-    color: rgb(138, 12, 12);
-}
-
-.cor2{
-    color: hotpink;
-}
-
-.intro{
-    color: #c179f5;
-}
-
-.cor3{
-    color: lightpink;
-}
-
-.cor4{
-    color: palegreen;
-}
-
-.cor5{
-    color: #529fa9;
-}
-
-.cor6{
-    color: violet;
-}
-
-.cor7{
-    color: royalblue;
-}
-
-.cor8{
-    color: darkviolet;
+.botão{
+    border-radius:none;
+    border-color: hsl(339, 90%, 69%);
+    box-shadow:50px;
+    background-color: hwb(120 42% 57%);
+    color: #9b0e49;
+    width: 10px;
+    height: 10px;
 }
