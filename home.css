@@ -1,6 +1,6 @@
-body{
-background-color:black;    
-color:rgb(105, 203, 169);
+body {
+    background-color: black;
+    color: rgb(105, 203, 169);
 }
 
 .meio {
@@ -14,15 +14,14 @@ h1 {
     color: rgb(0, 55, 255);
 }
 
-.cor1{
+.cor1 {
     color: rgb(252, 2, 2);
 }
 
-.cor2{
+.cor2 {
     color: hotpink;
 }
 
-.intro{
+.intro {
     color: #c179f5;
 }
-
